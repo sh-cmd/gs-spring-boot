@@ -15,7 +15,7 @@ variables:
   webAppName: 'java-spring-boot2'
 
   # Agent VM image name
-  vmImageName: 'windows-latest'
+  pool: 'Default'
 
 stages:
 - stage: Build
@@ -24,7 +24,7 @@ stages:
   - job: MavenPackageAndPublishArtifacts
     displayName: Maven Package and Publish Artifacts
     pool:
-      vmImage: $(vmImageName)
+      pool: $(pool)
     
     steps:
     - task: Maven@3
@@ -53,7 +53,7 @@ stages:
     displayName: Deploy Linux Web App
     environment: 'development'
     pool: 
-      vmImage: $(vmImageName)
+      pool: $(pool)
     strategy:
       runOnce:
         deploy:
