@@ -15,7 +15,7 @@ variables:
   webAppName: 'java-spring-boot2'
 
   # Agent VM image name
-  vmImageName: 'Default'
+  vmImageName: 'windows-latest'
 
 stages:
 - stage: Build
