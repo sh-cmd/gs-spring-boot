@@ -12,10 +12,10 @@ variables:
   azureSubscription: '0ef95557-c624-436f-a4bf-c9275e6a50ac'
   
   # Web app name
-  webAppName: 'java-spring-boot'
+  webAppName: 'java-spring-boot2'
 
   # Agent VM image name
-  vmImageName: 'ubuntu-latest'
+  vmImageName: 'shubham'
 
 stages:
 - stage: Build
