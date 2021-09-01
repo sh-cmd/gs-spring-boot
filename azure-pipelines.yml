@@ -15,7 +15,7 @@ variables:
   webAppName: 'java-spring-boot2'
 
   # Agent VM image name
-  vmImageName: 'shubham'
+  vmImageName: 'default'
 
 stages:
 - stage: Build
